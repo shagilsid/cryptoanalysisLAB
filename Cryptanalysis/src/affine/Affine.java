@@ -7,7 +7,6 @@ enum ALPHA{
 class Affine{
 public static void main(String[] args){
 	ALPHA alpha[]=ALPHA.values();
-	System.out.println(ALPHA.valueOf("e").ordinal());
 	Scanner scan=new Scanner(System.in);
 	System.out.println("enter message");
 	String m=scan.nextLine();
@@ -33,29 +32,22 @@ private static void hack(String m, String c) {
 	int b=c1-c2;
 	if(a<0) {
 		a+=26;
-		a%=26;
-		
-	}else {
-		a%=26;
 	}
+	a%=26;
+	
 	
 	if(b<0) {
 		b+=26;
-		b%=26;
-		
-	}else {
-		b%=26;
 	}
+	b%=26;
+	
 	
 	int k1=calculateInverse(b,a);
 	int k2=c2-m2*k1;
 	if(k2<0) {
 		k2+=26;
-		k2%=26;
-		
-	}else {
-		k2%=26;
 	}
+	k2%=26;
 	
 	System.out.println("Values of k1 is "+k1);
 	System.out.println("Values of k2 is "+k2);
