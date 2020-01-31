@@ -41,12 +41,13 @@ public class Polards {
 
 	}
 	
-	private static int gcd(int i, int n) {
+	public static int gcd(int i, int n) {
 		if(n==0)
 			return i;
 		
 		return gcd(n,i%n);
 	}
+	
 
 	static long someFunction(long x, int b,int n) {
 		return  (long) ((Math.pow(x, 2)+b)%n);

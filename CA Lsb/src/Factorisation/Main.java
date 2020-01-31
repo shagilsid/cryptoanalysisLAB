@@ -3,8 +3,9 @@ package Factorisation;
 public class Main {
 
 	public static void main(String[] args) {
-		Polards.run();
+//		Polards.run();
 //		49FermatLittleTheorem.run();
+		PollardsR1.run();
 
 	}
 
